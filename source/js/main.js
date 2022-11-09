@@ -26,10 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const getInput = () => {
         if (input.value) {
             city.innerText = input.value;
-            console.log('have an input' + input.value)
             return fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=bba62d55e0c797e63522a66e45c40900`);
         } else {
-            console.log('have an else option')
             return fetch(WEATHERAPI);
         }
     }
@@ -44,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 .then(response => response.json())
                 .then(localStorage.setItem('TimeStamp', requestTimeStamp))
                 .then(data => {
-                    console.log(requestTimeStamp)
                     createInfo(result[1], (`Weather now:\n${data.weather[0].description}`));
                     localStorage.setItem('StatusNow', data.weather[0].description);
                     createInfo(result[2], ('Temperature now:\n' + (data.main.temp - 273.15).toFixed(1) + '\u2103'));
