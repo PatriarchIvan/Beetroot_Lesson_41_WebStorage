@@ -1,0 +1,114 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  background: -o-linear-gradient(45deg, #7917bb, #793d6a);
+  background: linear-gradient(45deg, #7917bb, #793d6a);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 1170px;
+  min-width: 300px;
+  margin: 0 auto;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  padding: 20px 5px;
+  font-size: 26px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+.main .title {
+  width: 100%;
+  font-style: italic;
+}
+.main .time {
+  width: 100%;
+}
+.main .city {
+  font-size: 45px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  color: #2c0223;
+  font-size: 700;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.main .input {
+  background: transparent;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  padding: 2px 5px;
+}
+.main .input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6039215686);
+  font-style: italic;
+}
+.main .input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6039215686);
+  font-style: italic;
+}
+.main .input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6039215686);
+  font-style: italic;
+}
+.main .input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6039215686);
+  font-style: italic;
+}
+.main .input::placeholder {
+  color: rgba(255, 255, 255, 0.6039215686);
+  font-style: italic;
+}
+.main .input:active, .main .input:focus {
+  background: rgba(79, 1, 95, 0.2862745098);
+}
+.main .input:active::-webkit-input-placeholder, .main .input:focus::-webkit-input-placeholder {
+  color: #fff;
+}
+.main .input:active::-moz-placeholder, .main .input:focus::-moz-placeholder {
+  color: #fff;
+}
+.main .input:active:-ms-input-placeholder, .main .input:focus:-ms-input-placeholder {
+  color: #fff;
+}
+.main .input:active::-ms-input-placeholder, .main .input:focus::-ms-input-placeholder {
+  color: #fff;
+}
+.main .input:active::placeholder, .main .input:focus::placeholder {
+  color: #fff;
+}
+.main .btn {
+  width: 200px;
+  height: 48px;
+  font-size: 20px;
+  background: rgba(79, 1, 95, 0.2862745098);
+}
+.main .btn:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.6039215686);
+}
